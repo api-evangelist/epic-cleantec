@@ -1,8 +1,20 @@
 aid: epic-cleantec
 name: Epic CleanTec
-description: 'Epic CleanTec is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Epic Cleantec is a San Francisco based water technology company that designs,
+  builds and operates onsite water reuse systems for buildings. Its OneWater and OneWater
+  Rain systems collect, treat and recycle a building''s greywater, blackwater, rainwater
+  and condensate onsite — recovering up to 95% of wastewater for non-potable uses such
+  as toilet flushing, irrigation, cooling towers and laundry — alongside wastewater heat
+  recovery and a soil amendment product line. The technology grew out of work on the Bill
+  and Melinda Gates Foundation Reinvent the Toilet Challenge and is deployed in multifamily,
+  commercial office, hospitality, stadium, data center, higher education and community-scale
+  developments across North America. Systems ship with PLC/SCADA control and a cloud-connected
+  Eco-Insights reporting dashboard for remote monitoring, alarms and utility savings reporting,
+  but Epic Cleantec publishes no public developer program, API documentation or machine-readable
+  API contract; the data surface is delivered to building owners and operators as a hosted
+  dashboard rather than as a public API.'
 url: https://raw.githubusercontent.com/api-evangelist/epic-cleantec/refs/heads/main/apis.yml
+image: https://epiccleantec.com/wp-content/uploads/Epic_Cleantec_Logo_Stacked_Color-6.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +24,15 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Water
+- Water Reuse
+- Wastewater
+- Cleantech
+- Sustainability
+- Buildings
+- Real Estate
+- Climate Tech
+- Internet of Things
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/epic-cleantec-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://epiccleantec.com/
+- type: About
+  url: https://epiccleantec.com/about
+- type: Blog
+  url: https://epiccleantec.com/blog
+- type: BlogRSS
+  url: https://epiccleantec.com/feed
+- type: Support
+  url: https://epiccleantec.com/contact-us
+- type: TermsOfService
+  url: https://epiccleantec.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://epiccleantec.com/privacy-policy
+- type: Newsletter
+  url: https://epiccleantec.com/newsletter
+- type: Careers
+  url: https://epiccleantec.com/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/epiccleantec/
+- type: Twitter
+  url: https://x.com/EpicCleantec
+- type: YouTube
+  url: https://www.youtube.com/@epiccleantec
+- type: LLMsTxt
+  url: llms/epic-cleantec-llms.txt
+- type: Plans
+  url: plans/epic-cleantec-plans-pricing.yml
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Epic Cleantec ships a cloud-connected Eco-Insights reporting dashboard with every
+    OneWater system, but that dashboard is an end-user product for building owners — the
+    marketing site is the company's only public host, no api./app./portal./docs./developer
+    subdomain resolves (all NXDOMAIN), and every OpenAPI, GraphQL, MCP, agent-card and
+    /.well-known/ path probed on epiccleantec.com returned 404.
+  evidence:
+  - url: https://epiccleantec.com/openapi.json
+    status: 404
+  - url: https://epiccleantec.com/.well-known/agent-card.json
+    status: 404
+  - url: https://epiccleantec.com/llms.txt
+    status: 404
+  - url: https://epiccleantec.com/solutions/technology
+    status: 200
+  checked: '2026-08-12'

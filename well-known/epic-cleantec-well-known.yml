@@ -1,0 +1,60 @@
+generated: '2026-08-12'
+method: probed
+source: https://epiccleantec.com/
+note: >-
+  Every /.well-known/ path probed on the only host Epic Cleantec operates
+  (epiccleantec.com) returned 404. The WordPress site answers unknown paths with a
+  404 status and an HTML error page, so nothing here is a soft-200 false positive.
+  NO WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a
+  verified ABSENCE, not a presence. There are no additional hosts to probe: no
+  api./app./portal./docs./developer. subdomain resolves (all NXDOMAIN) and the
+  company publishes no API baseURL.
+hosts:
+- host: epiccleantec.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: text/html
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: text/html
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: text/html
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: text/html
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: text/html
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: text/html
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: text/html
+    file: null
+hits: 0
+files_saved: 0
+x-evidence:
+  fetched: '2026-08-12'
+  method: curl -sIL
+  subdomains_checked:
+  - api.epiccleantec.com
+  - app.epiccleantec.com
+  - portal.epiccleantec.com
+  - dashboard.epiccleantec.com
+  - data.epiccleantec.com
+  - developer.epiccleantec.com
+  - developers.epiccleantec.com
+  - docs.epiccleantec.com
+  - my.epiccleantec.com
+  - cloud.epiccleantec.com
+  - connect.epiccleantec.com
+  subdomain_result: all NXDOMAIN

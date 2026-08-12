@@ -1,0 +1,25 @@
+generated: '2026-08-12'
+method: searched
+source: https://epiccleantec.com/solutions/financing-for-water-recycling-projects
+plan_count: 0
+note: >-
+  Epic Cleantec publishes no pricing tiers, rate card, or plan catalog. It sells
+  engineered onsite water reuse systems (OneWater, OneWater Rain), wastewater heat
+  recovery, and an operations & maintenance service — all quoted per project. The
+  commercial entry points on the site are a "Free Project Assessment" form, a
+  financing page describing third-party project financing / water-as-a-service style
+  arrangements, and a sales contact form. No self-serve sign-up, no published
+  subscription pricing, and no API product to price.
+model: quote-only
+sales_motion: enterprise / project-based
+entry_points:
+- name: Free Project Assessment
+  url: https://epiccleantec.com/free-project-assessment
+  status: 200
+- name: Financing for Water Recycling Projects
+  url: https://epiccleantec.com/solutions/financing-for-water-recycling-projects
+  status: 200
+- name: Contact Us
+  url: https://epiccleantec.com/contact-us
+  status: 200
+plans: []
