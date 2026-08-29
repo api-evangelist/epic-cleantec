@@ -14,6 +14,17 @@ description: 'Epic Cleantec is a San Francisco based water technology company th
   API contract; the data surface is delivered to building owners and operators as a hosted
   dashboard rather than as a public API.'
 url: https://raw.githubusercontent.com/api-evangelist/epic-cleantec/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://epiccleantec.com/wp-content/uploads/Epic_Cleantec_Logo_Stacked_Color-6.jpg
 x-type: company
 x-source: harvest:secondary-market
