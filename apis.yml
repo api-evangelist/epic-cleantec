@@ -54,7 +54,7 @@ tags:
 - Cleantech
 - Sustainability
 - Buildings
-- Real-Estate
+- Real Estate
 - Climate Tech
 - IoT
 tags_raw:
@@ -68,6 +68,7 @@ tags_raw:
 - Real Estate
 - Climate Tech
 - Internet of Things
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
